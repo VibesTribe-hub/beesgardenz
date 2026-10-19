@@ -163,31 +163,34 @@
             </div>
         </section>
 
-        <!-- Portfolio Section -->
+        <!-- Portfolio Section (UPDATED WITH YOUR IMAGES) -->
         <section id="portfolio" class="py-16 sm:py-24 bg-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-4xl font-extrabold text-center mb-4 text-green-800">Our Recent Work</h2>
                 <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">See the quality and reliability we bring to your property, season after season.</p>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Project 1: Summer Maintenance -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
-                        <img src="https://placehold.co/600x400/10b981/ffffff?text=Perfectly+Groomed+Lawn" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" alt="Summer Maintenance">
+                        <img src="1000028323.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" alt="Pristine Summer Lawn Maintenance">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-gray-900 mb-2">Pristine Summer Lawn Maintenance</h3>
                             <p class="text-gray-600 text-sm">Expert weekly care including professional mowing, sharp edging, and detailed trimming.</p>
                         </div>
                     </div>
 
+                    <!-- Project 2: Fall Cleanup -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
-                        <img src="https://placehold.co/600x400/eab308/ffffff?text=Leaf+Removal" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" alt="Fall Cleanup">
+                        <img src="1000028321.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" alt="Comprehensive Fall Leaf Cleanup">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-gray-900 mb-2">Comprehensive Fall Leaf Cleanup</h3>
                             <p class="text-gray-600 text-sm">Preparing your property for winter by efficiently removing all leaves and debris.</p>
                         </div>
                     </div>
 
+                    <!-- Project 3: Winter Snow Removal -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
-                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Residential+Snow+Removal" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" alt="Snow Removal">
+                        <img src="1000028322.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" alt="Reliable Winter Safety & Access">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-gray-900 mb-2">Reliable Winter Safety & Access</h3>
                             <p class="text-gray-600 text-sm">Ensuring clear, safe access with prompt snow plowing and de-icing services.</p>
@@ -245,11 +248,6 @@
                 <p class="text-xl text-center text-gray-300 mb-12 max-w-2xl mx-auto">Get in touch today for a free consultation and project quote. We'll bring your dream landscape to life.</p>
 
                 <div class="max-w-lg mx-auto bg-gray-800 p-8 rounded-xl shadow-2xl">
-                    <!-- 
-                      TO RECEIVE EMAILS AT beesgardenz@gmail.com:
-                      Sign up for a free account at https://formspree.io, create a form linked to beesgardenz@gmail.com,
-                      and replace the action URL below with your unique Formspree endpoint: e.g. action="https://formspree.io/f/your_form_id"
-                    -->
                     <form action="https://formspree.io/f/beesgardenz@gmail.com" method="POST" onsubmit="handleFormSubmission(event)">
                         <div class="mb-5">
                             <label for="name" class="block text-sm font-medium mb-2">Full Name</label>
@@ -312,7 +310,6 @@
             statusMessage.textContent = '';
             statusMessage.className = 'mt-6 p-4 rounded-lg text-center font-medium';
 
-            // If using Formspree or an AJAX submission, submit data asynchronously:
             fetch(form.action, {
                 method: 'POST',
                 body: new FormData(form),
